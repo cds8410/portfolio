@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 10px; }
+
+.container {
+  margin: 2rem;
+  border: solid 1.5rem #004056;
+  padding-top: 40rem;
+  min-width: 80vw; }
+
+.vertical-container {
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center; }
+
+.shape {
+  background-color: #004056;
+  min-width: 90vw;
+  padding-top: 1200px;
+  clip-path: polygon(0 0, 0 40rem, 15vw 80rem, 100vw 80rem, 100vw 40rem, 85vw 0); }
+
+/*# sourceMappingURL=style.css.map */

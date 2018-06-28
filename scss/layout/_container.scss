@@ -1,0 +1,13 @@
+.container{
+    margin: 2rem;
+    border: solid 1.5rem $color-d;
+    padding-top: 40rem;
+    min-width: 80vw;
+}
+
+.vertical-container{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}

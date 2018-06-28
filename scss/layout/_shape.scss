@@ -1,0 +1,13 @@
+.shape{
+    background-color: $color-d;
+    min-width: 90vw;
+    padding-top: 1200px;
+    clip-path: polygon(
+        0 0,
+        0 40rem,
+        15vw 80rem,
+        100vw 80rem,
+        100vw 40rem,
+        85vw 0
+    );
+}
