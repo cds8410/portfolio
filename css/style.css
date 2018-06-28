@@ -19,6 +19,9 @@ body {
   margin-right: auto;
   width: 90%;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   z-index: 1;
 }
 
@@ -350,8 +353,13 @@ body {
   vertical-align: middle;
 }
 
-.frame {
-  border: solid 2px #004056;
+.front-page {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10rem;
+  min-height: 40vh;
+  border: solid 3px #004056;
 }
 
 .is-title {
@@ -385,10 +393,10 @@ body {
 }
 
 .nav-list-hover:hover {
-  -webkit-transition: color .25s, -webkit-box-shadow .75s;
-  transition: color .25s, -webkit-box-shadow .75s;
-  transition: color .25s, box-shadow .75s;
-  transition: color .25s, box-shadow .75s, -webkit-box-shadow .75s;
+  -webkit-transition: color .25s, -webkit-box-shadow .75s ease-out;
+  transition: color .25s, -webkit-box-shadow .75s ease-out;
+  transition: color .25s, box-shadow .75s ease-out;
+  transition: color .25s, box-shadow .75s ease-out, -webkit-box-shadow .75s ease-out;
   color: #ffffcb;
   -webkit-box-shadow: inset 20rem -10rem #2c858d;
           box-shadow: inset 20rem -10rem #2c858d;

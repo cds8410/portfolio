@@ -26,7 +26,7 @@
 }
 
 .nav-list-hover:hover{
-    transition: color .25s, box-shadow .75s;
+    transition: color .25s, box-shadow .75s ease-out;
     color: $color-l;
     box-shadow: inset 20rem -10rem $color-md;
 }
