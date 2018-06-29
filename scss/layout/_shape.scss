@@ -1,12 +1,23 @@
-.shape{
-    background-color: $color-l;
-    width: 100%;
-    padding-top: 1200px;
-    position: absolute;
-    clip-path: none;
-}
+// //small
+// .shape{
+//     background-color: $color-l;
+//     width: 100%;
+//     padding-top: 1200px;
+//     position: absolute;
+//     //clip-path: none;
+//     clip-path: polygon(
+//             0 0,
+//             0 60rem,
+//             10vw 100rem,
+//             100vw 100rem,
+//             100vw 60rem,
+//             100vw 100rem
+//             100vw 0
+//         ); 
+// }
 
-@media (min-width: 480px){
+//large
+// @media (min-width: 480px){
     .shape{
         background-color: $color-l;
         width: 100%;
@@ -15,10 +26,10 @@
         clip-path: polygon(
             0 0,
             0 40rem,
-            15vw 80rem,
-            100vw 80rem,
+            15vw 100rem,
+            100vw 100rem,
             100vw 40rem,
             85vw 0
         ); 
     }
-}
+// }
