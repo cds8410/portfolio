@@ -1,0 +1,21 @@
+@keyframes intro1{
+    from{
+        transform: translateY(-3rem);
+        filter: opacity(0);
+    }
+    to{
+        transform: translateY(0rem);
+        filter: opacity(1);
+    }
+}
+
+@keyframes intro2{
+    from{
+        transform: translateX(4rem);
+        filter: opacity(0);
+    }
+    to{
+        transform: translateY(0rem);
+        filter: opacity(1);
+    }
+}

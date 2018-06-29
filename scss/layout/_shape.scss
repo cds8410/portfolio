@@ -1,6 +1,6 @@
 .shape{
     background-color: $color-l;
-    min-width: 120vw;
+    width: 100%;
     padding-top: 1200px;
     position: absolute;
     clip-path: none;
@@ -9,7 +9,7 @@
 @media (min-width: 480px){
     .shape{
         background-color: $color-l;
-        min-width: 120vw;
+        width: 100%;
         padding-top: 1200px;
         position: absolute;
         clip-path: polygon(

@@ -1,0 +1,29 @@
+.nav-list-container{
+    list-style: none;
+    display: flex;
+    width: 45rem;
+    font-size: $font-size-s;
+    justify-content: space-between;
+    color: $color-d;
+}
+
+.nav-list-title{
+    font-weight: 700;
+    border-right: solid .3rem $color-d;
+    padding-right: 1rem;
+}
+
+.nav-list-item{
+    padding: 1rem;
+    text-align: center
+}
+
+.nav-list-link{
+    box-shadow: inset 0 -.3rem $color-md;
+}
+
+.nav-list-link:hover{
+    transition: color .25s, box-shadow .75s ease-out;
+    color: $color-l;
+    box-shadow: inset 20rem -10rem $color-md;
+}

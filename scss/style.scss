@@ -1,5 +1,6 @@
 @import 'base/variables';
 @import 'base/elements';
+@import 'base/animations';
 
 @import 'layout/container';
 @import 'layout/shape';
@@ -7,6 +8,7 @@
 
 @import 'module/test';
 @import 'module/front-page';
+@import 'module/navigation';
 
 @import 'state/navigation';
 @import 'state/text';
