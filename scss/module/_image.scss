@@ -1,4 +1,12 @@
 .image-scale-down{
     width: auto;
-    height: 20rem;
+    height: 10rem;
+}
+
+//large
+@media (min-width: 480px){
+    .image-scale-down{
+        width: auto;
+        height: 20rem;
+    }
 }
