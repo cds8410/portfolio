@@ -5,14 +5,25 @@
     padding-top: 1800px;
     position: absolute;
     //clip-path: none;
+    // clip-path: polygon(
+    //         0 0,
+    //         0 60rem,
+    //         10vw 100rem,
+    //         100vw 100rem,
+    //         100vw 60rem,
+    //         100vw 100rem
+    //         100vw 0
+    //     ); 
     clip-path: polygon(
             0 0,
-            0 60rem,
-            10vw 100rem,
-            100vw 100rem,
-            100vw 60rem,
-            100vw 100rem
-            100vw 0
+            0 40rem,
+            15vw 93rem,
+            0 140rem,
+            0 180rem,
+            85vw 180rem,
+            100vw 93rem,
+            100vw 40rem,
+            85vw 0
         ); 
 }
 
