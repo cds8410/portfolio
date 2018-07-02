@@ -2,24 +2,17 @@
 .shape{
     background-color: $color-l;
     width: 100%;
-    padding-top: 1800px;
+    padding-top: 250rem;
     position: absolute;
-    //clip-path: none;
-    // clip-path: polygon(
-    //         0 0,
-    //         0 60rem,
-    //         10vw 100rem,
-    //         100vw 100rem,
-    //         100vw 60rem,
-    //         100vw 100rem
-    //         100vw 0
-    //     ); 
     clip-path: polygon(
             0 0,
             0 40rem,
             15vw 93rem,
             0 140rem,
             0 180rem,
+            15vw 250rem,
+            100vw 250rem,
+            100vw 230rem,
             85vw 180rem,
             100vw 93rem,
             100vw 40rem,
@@ -32,18 +25,22 @@
     .shape{
         background-color: $color-l;
         width: 100%;
-        padding-top: 1800px;
+        padding-top: 180rem;
         position: absolute;
         clip-path: polygon(
             0 0,
             0 40rem,
             15vw 93rem,
             0 140rem,
-            0 180rem,
-            85vw 180rem,
+            0 100%,
+            85vw 100%,
             100vw 93rem,
             100vw 40rem,
             85vw 0
         ); 
     }
+}
+
+@media (min-width: 700px){
+    padding-top: 180rem;
 }

@@ -12,6 +12,7 @@ html {
 
 body {
   background-color: #004056;
+  height: 100vh;
 }
 
 p {
@@ -138,21 +139,25 @@ p {
 .shape {
   background-color: #ffffcb;
   width: 100%;
-  padding-top: 1800px;
+  padding-top: 250rem;
   position: absolute;
-  -webkit-clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
-          clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
+  -webkit-clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 15vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
+          clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 15vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
 }
 
 @media (min-width: 480px) {
   .shape {
     background-color: #ffffcb;
     width: 100%;
-    padding-top: 1800px;
+    padding-top: 180rem;
     position: absolute;
-    -webkit-clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
-            clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
+    -webkit-clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 100%, 85vw 100%, 100vw 93rem, 100vw 40rem, 85vw 0);
+            clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 100%, 85vw 100%, 100vw 93rem, 100vw 40rem, 85vw 0);
   }
+}
+
+@media (min-width: 700px) {
+  padding-top: 180rem;
 }
 
 /*-----------------------------------*  $TOAST-GRID
@@ -608,28 +613,31 @@ p {
   display: flex;
   min-height: 25rem;
   min-width: 40rem;
-  margin-bottom: 6rem;
+  margin-top: 12rem;
+  margin-bottom: 8rem;
   padding: 1rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.picture-frame {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #2c858d;
-  border: solid 0.75rem #2c858d;
-  margin-right: 2rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 0 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.3);
-          box-shadow: 0 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.3);
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.picture-frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 2rem;
+  margin-bottom: 8rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 10rem;
 }
 
@@ -641,6 +649,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   min-width: 30%;
+  max-width: 60%;
 }
 
 .portfolio-item-title {
@@ -651,53 +660,41 @@ p {
 }
 
 @media (min-width: 480px) {
+  .design-box {
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+  }
   .picture-frame {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    border: solid 0.75rem #2c858d;
-    margin-right: 2rem;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-shadow: 0 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.3);
-            box-shadow: 0 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.3);
     height: 20rem;
+    margin-bottom: 5rem;
   }
   .portfolio-text-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    max-width: 40%;
+    max-width: 30%;
   }
 }
 
 @media (min-width: 700px) {
   .portfolio-text-box {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    max-width: 60%;
+    max-width: 30%;
   }
 }
 
 .image-scale-down {
   width: auto;
-  height: 10rem;
+  height: 20rem;
+  border: solid 0.5rem #2c858d;
+  -webkit-box-shadow: 0 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0.5rem 0.5rem 0.25rem rgba(0, 0, 0, 0.3);
 }
 
 @media (min-width: 480px) {
   .image-scale-down {
-    width: auto;
+    height: 15rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .image-scale-down {
     height: 20rem;
   }
 }

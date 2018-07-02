@@ -1,12 +1,19 @@
 .image-scale-down{
     width: auto;
-    height: 10rem;
+    height: 20rem;
+    border: solid .5rem $color-md;
+    box-shadow: 0 .5rem .5rem .25rem rgba(0,0,0,0.3);
 }
 
 //large
 @media (min-width: 480px){
     .image-scale-down{
-        width: auto;
+        height: 15rem;
+    }
+}
+
+@media (min-width: 700px){
+    .image-scale-down{
         height: 20rem;
     }
 }
