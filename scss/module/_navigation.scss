@@ -2,20 +2,12 @@
     list-style: none;
     display: flex;
     max-width: 45rem;
+    margin-bottom: 8rem;
     width: 85%;
     font-size: $font-size-s;
     justify-content: flex-start;
     align-items: center;
     color: $color-d;
-    
-    
-    // list-style: none;
-    // display: flex;
-    // width: 18rem;
-    // font-size: $font-size-s;
-    // justify-content: space-between;
-    // align-items: center;
-    // color: $color-d;
 }
 
 .nav-list-title{
@@ -25,7 +17,7 @@
 }
 
 .nav-list-item{
-    padding: 1rem;
+    padding: .5rem;
     text-align: center;
 }
 
@@ -44,9 +36,9 @@
 }
 
 .nav-list-link:hover{
-    transition: color .25s, box-shadow .75s ease-out;
+    transition: color .25s, box-shadow .5s ease-out;
     color: $color-l;
-    box-shadow: inset 20rem -10rem $color-md;
+    box-shadow: inset 0rem -10rem $color-md;
 }
 
 .desktop-link{
@@ -63,6 +55,7 @@
         justify-content: space-between;
         align-items: center;
         color: $color-d;
+        margin-bottom: 8rem;
     }
     .nav-mobile{
         display: none;
