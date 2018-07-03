@@ -1,10 +1,9 @@
 .design-box{
     display: flex;
-    //border: solid .25rem $color-md;
     min-height: 25rem;
     min-width: 40rem;
-    margin-top: 12rem;
-    margin-bottom: 8rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
     padding: 1rem;
     align-items: center;
     justify-content: center;
@@ -14,15 +13,15 @@
 .picture-frame{
     display: flex;
     margin-right: 2rem;
-    margin-bottom: 8rem;
-    align-items: center;
+    margin-bottom: 3rem;
     justify-content: center;
-    height: 10rem;
 }
 
 .portfolio-text-box{
     display: flex;
     align-items: center;
+    text-align: center;
+    flex-wrap: nowrap;
     min-width: 30%;
     max-width: 60%;
 }
@@ -31,9 +30,13 @@
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     box-shadow: inset 0 -.25rem $color-md;
+    transition: .5s all;
 }
 
-
+.portfolio-item-title:hover{
+    transition: .25s all;
+    color: $color-m;
+}
 
 @media (min-width: 480px){
     .design-box{
@@ -42,8 +45,7 @@
     }
 
     .picture-frame{
-        height: 20rem;
-        margin-bottom: 5rem;
+        margin-bottom: 3rem;
     }
 
     .portfolio-text-box{
@@ -52,10 +54,11 @@
 }
 
 @media (min-width: 700px){
+
     .picture-frame{
-        //margin-bottom: 5rem;
     }
     .portfolio-text-box{
         max-width: 30%;
+        text-align: left;
     }
 }
