@@ -25,10 +25,19 @@
     box-shadow: inset 0 -.3rem $color-md;
 }
 
-.nav-mobile{
+.nav-mobile-button{
     display: flex;
     align-items: center;
     margin-left: 3rem;
+}
+
+.nav-mobile{
+    flex-direction: column;
+    background-color: $color-l;
+    border: .5rem solid $color-d;
+    padding-left: 50rem;
+    padding-top: 50rem;
+    transition: .5s all;
 }
 
 .nav-desktop{
@@ -57,7 +66,7 @@
         color: $color-d;
         margin-bottom: 8rem;
     }
-    .nav-mobile{
+    .nav-mobile-button{
         display: none;
     }
     .nav-desktop{
