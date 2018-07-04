@@ -12,7 +12,7 @@
 
 .image-scale-thumbnail:hover{
     height: 21rem;
-    margin-top: -.5rem;
+    margin-top: -1rem;
 }
 
 .image-scale-small{
@@ -23,12 +23,16 @@
 .image-scale-small:hover{
     transition: .5s all;
     height: 31rem;
-    margin-top: -.5rem;
+    margin-top: -1rem;
 }
 
 .image-scale-wide{
     @extend %image-mod;
     height: 9rem;
+}
+
+.image-normal{
+    @extend %image-mod;
 }
 
 .image-scale-wide:hover{
