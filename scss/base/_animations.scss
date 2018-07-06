@@ -36,3 +36,13 @@
         filter: opacity(1);
     }
 }
+
+@keyframes mobile-menu-in{
+    from{
+        transform: scaleX(100%);
+        transform: scaleY(0%);
+    }
+    to{
+        transform: scaleY(100%);
+    }
+}

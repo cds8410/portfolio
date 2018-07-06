@@ -1,0 +1,14 @@
+.nav-list-desktop{
+    display: none;
+}
+
+@media (min-width: 700px){
+    .nav-list-desktop{
+        list-style: none;
+        display: flex;
+        margin-bottom: 8rem;
+        font-size: $font-size-s;
+        align-items: center;
+        color: $color-d;
+    }
+}

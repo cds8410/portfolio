@@ -1,60 +1,85 @@
-.mobile-box{
+.mobile-flex-frame{ 
     display: flex;
-    margin-top: 2rem;
-    flex-direction: column;
-    align-self: flex-start;
-    justify-content: center;
+    justify-content: flex-end;
+    width: auto;
+    position: absolute;
 }
 
-.nav-mobile-button{
+.nav-list-mobile{
+    list-style: none;
     display: flex;
-    background-color: $color-ml;
-    padding: 1rem;
-    box-shadow: 0 .5rem .5rem rgba(0,0,0,.5);
-    z-index: 3;
-}
-
-.nav-mobile-button:hover{
-    box-shadow: 0 .5rem .5rem rgba(0,0,0,.5), inset 0 -10rem $color-md;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+    font-size: $font-size-s;
+    align-items: center;
+    color: $color-d;
 }
 
 .nav-mobile{
     display: flex;
     flex-direction: column;
     background-color: $color-l;
-    border: .5rem solid $color-d;
     transition: .5s all;
     font-size: $font-size-s;
-}
-
-.nav-mobile-list-item{
-    display: flex;
-    justify-content: center;
-    padding: 1rem 5rem;
-    margin-bottom: .5rem;
-    transition: .25s all;
-}
-
-.nav-mobile-list-item:hover{
-
-}
-
-.nav-mobile-list-link{
     list-style: none;
-    padding: .25rem;
-    //padding-bottom: .25rem;
-    box-shadow: inset 0 -.25rem $color-md;
+    box-shadow: -.5rem .5rem .5rem rgba(0,0,0,.5);
+    z-index: 1;
+    padding: 1rem;
+    padding-top: 4rem;
+    //margin-right: 6.5rem;
+    margin-top: 1.5rem;
+}
+
+.nav-mobile-transition{
+    animation-name: mobile-menu-in;
+    animation-fill-mode: both;
+    animation-timing-function: cubic-bezier(.61,.14, .69,1.57);
+    animation-duration: 2s;
+}
+
+.nav-mobile > .nav-list-item{
+    padding: 1rem 1rem;
+}
+
+.nav-mobile > .nav-list-item{
+    margin-left: 0rem;
+    padding: .5rem;
+    text-align: center;
+}
+
+.nav-mobile-button{
+    display: flex;
+    background-color: $color-l;
+    padding: 1rem;
+    box-shadow: -.25rem .5rem .5rem rgba(0,0,0,.5);
+    z-index: 3;
+    position: relative;
+    float: right;
+    transition: .1s all;
+}
+
+.nav-mobile-button:hover{
+    box-shadow: -.25rem .5rem .5rem rgba(0,0,0,.5), inset 0 -10rem $color-md;
+    color: $color-l;
     transition: .25s all;
 }
 
 .nav-mobile-list-link:hover{
     box-shadow: inset 0 -10rem $color-md;
     color: $color-l;
-    transition: .25s all;
 }
 
 @media (min-width: 700px){
     .nav-mobile-button{
+        display: none;
+    }
+    .nav-mobile{
+        display: none;
+    }
+    .nav-mobile-frame{
+        display: none;
+    }
+    .nav-list-mobile{
         display: none;
     }
 }
