@@ -1,39 +1,36 @@
-.portfolio-item-container{
+.portfolio-item-container {
     display: flex;
-    justify-content: center;
-    //for testing
-    border: solid 3px $color-md;
-    padding-top: 3rem;
+    justify-content: center; 
 }
 
-.portfolio-header{
+.portfolio-header {
     justify-content: center;
 }
 
-.portfolio-title-text{  
-    padding-top: 15rem;
-    text-align: center;
-    position: relative;
-    z-index: 2;
+.portfolio-title-text {
     display: block;
+    position: relative;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15rem;
+    padding-top: 15rem;
+    text-align: center;
+    z-index: 2;
 }
 
-.portfolio-title-text > h1{
-    background-color: $color-ml;
+.portfolio-title-text>h1 {
     padding: 1rem;
-    box-shadow: 0 .5rem .25rem rgba(0,0,0,0.5);
     margin-bottom: 2rem;
+    background-color: $color-ml;
+    box-shadow: 0 .5rem .25rem rgba(0, 0, 0, 0.5);
     font-size: 5rem;
 }
 
-.portfolio-title-text > h4{
+.portfolio-title-text>h4 {
     font-size: 2.5rem;
 }
 
-.portfolio-portrait-frame{
+.portfolio-portrait-frame {
     position: absolute;
     background-color: $color-md;
     padding: .5rem;
@@ -44,25 +41,31 @@
     margin-right: auto;
 }
 
-.portfolio-portrait{
+.portfolio-portrait {
     clip-path: polygon(0 0, 90% 0, 100% 80%, 10% 80%);
 }
 
-@media (min-width: 700px){
-    .portfolio-title-text > h1{
-        font-size: 6rem;
-        display: block;
+@media (min-width: 700px) {
+    .portfolio-item-container{
+        max-width: 80rem;
+    }
+    .portfolio-title-text > h4 {
+        width: 18rem;
+        margin-right: 0rem;
     }
 
-    .portfolio-title-text{  
-        padding-top: 15rem;
+    .portfolio-title-text {
+        margin-left: 0rem;
+        margin-right: -15%;
+        margin-top: 7rem;
         text-align: right;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
     }
 
-    .portfolio-portrait-frame{
-        display: flex;
+    .portfolio-portrait-frame {
+        margin-left: -15%;
+        position: absolute;
     }
 }
