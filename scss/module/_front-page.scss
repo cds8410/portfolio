@@ -1,13 +1,12 @@
-.portfolio-item-container {
+.front-page-title-container {
     display: flex;
     justify-content: center; 
+    margin-bottom: 5rem;
+    position: relative;
+    z-index: 0;
 }
 
-.portfolio-header {
-    justify-content: center;
-}
-
-.portfolio-title-text {
+.front-page-title-text {
     display: block;
     position: relative;
     margin-left: auto;
@@ -15,10 +14,10 @@
     margin-top: 15rem;
     padding-top: 15rem;
     text-align: center;
-    z-index: 2;
+    z-index: 0;
 }
 
-.portfolio-title-text>h1 {
+.front-page-title-text>h1 {
     padding: 1rem;
     margin-bottom: 2rem;
     background-color: $color-ml;
@@ -26,45 +25,52 @@
     font-size: 5rem;
 }
 
-.portfolio-title-text>h4 {
-    font-size: 2.5rem;
+.front-page-title-text>h4 {
+    font-size: 2rem;
 }
 
-.portfolio-portrait-frame {
+.front-page-portrait-frame {
     position: absolute;
     background-color: $color-md;
     padding: .5rem;
     clip-path: polygon(0 0, 90% 0, 100% 80%, 10% 80%);
-    z-index: 1;
+    z-index: -1;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 
-.portfolio-portrait {
+.front-page-portrait {
     clip-path: polygon(0 0, 90% 0, 100% 80%, 10% 80%);
 }
 
-@media (min-width: 700px) {
-    .portfolio-item-container{
-        max-width: 80rem;
+@media (min-width: 480px){
+    .portfolio-text-container{
+        font-size: $font-size-m;
+        flex-direction: column;
+        text-align: left;
+        width: 50%;
+        float: right;
     }
-    .portfolio-title-text > h4 {
+}
+
+@media (min-width: 700px) {
+    .front-page-title-text > h4 {
         width: 18rem;
         margin-right: 0rem;
     }
 
-    .portfolio-title-text {
+    .front-page-title-text {
         margin-left: 0rem;
         margin-right: -15%;
-        margin-top: 7rem;
+        margin-top: 6rem;
         text-align: right;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
     }
 
-    .portfolio-portrait-frame {
+    .front-page-portrait-frame {
         margin-left: -15%;
         position: absolute;
     }

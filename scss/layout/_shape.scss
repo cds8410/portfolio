@@ -1,83 +1,58 @@
 //small
-.shape{
+%shape {
     background-color: $color-l;
     width: 100%;
-    padding-top: 180rem;
     position: absolute;
-    clip-path: polygon(
-            0 0,
-            0 40rem,
-            15vw 93rem,
-            0 140rem,
-            0 180rem,
-            15vw 250rem,
-            100vw 250rem,
-            100vw 230rem,
-            85vw 180rem,
-            100vw 93rem,
-            100vw 40rem,
-            85vw 0
-        );
+    clip-path: polygon( 0 0, 0 40rem, 5vw 93rem, 0 140rem, 0 180rem, 5vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
     z-index: 0;
 }
 
-.shape-shadow{
-    background-color: rgba(0,0,0,0.25);
+.shape-s {
+    @extend %shape;
+    padding-top: 130rem;
+}
+
+.shape-m {
+    @extend %shape;
+    padding-top: 230rem;
+}
+
+%shape-shadow {
+    background-color: rgba(0, 0, 0, 0.25);
     width: 100%;
     margin-top: 5rem;
-    padding-top: 175rem;
     position: absolute;
-    clip-path: polygon(
-            0 0,
-            0 40rem,
-            15vw 93rem,
-            0 140rem,
-            0 180rem,
-            15vw 250rem,
-            100vw 250rem,
-            100vw 230rem,
-            85vw 180rem,
-            100vw 93rem,
-            100vw 40rem,
-            85vw 0
-        );
     z-index: -1;
 }
 
-//large
-@media (min-width: 480px){
-    .shape{
-        padding-top: 180rem;
-        clip-path: polygon(
-            0 0,
-            0 40rem,
-            15vw 93rem,
-            0 140rem,
-            0 100%,
-            90vw 100%,
-            85vw 170rem,
-            100vw 93rem,
-            100vw 40rem,
-            85vw 0
-        ); 
-    }
-    .shape{
-        padding-top: 180rem;
-        clip-path: polygon(
-            0 0,
-            0 40rem,
-            15vw 93rem,
-            0 140rem,
-            0 100%,
-            90vw 100%,
-            85vw 170rem,
-            100vw 93rem,
-            100vw 40rem,
-            85vw 0
-        ); 
-    }
+.shape-shadow-s {
+    @extend %shape-shadow;
+    padding-top: 125rem;
+    clip-path: polygon( 0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 15vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
 }
 
-@media (min-width: 700px){
+.shape-shadow-m {
+    @extend %shape-shadow;
+    padding-top: 225rem;
+    clip-path: polygon( 0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 15vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
+}
 
+//large
+@media (min-width: 480px) {
+    .shape-s {
+        padding-top: 120rem;
+        clip-path: polygon( 0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 100%, 90vw 100%, 85vw 170rem, 100vw 93rem, 100vw 40rem, 85vw 0);
+    }
+    .shape-shadow-s {
+        padding-top: 115rem;
+        clip-path: polygon( 0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 15vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
+    }
+    .shape-m {
+        padding-top: 155rem;
+        clip-path: polygon( 0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 100%, 90vw 100%, 85vw 170rem, 100vw 93rem, 100vw 40rem, 85vw 0);
+    }
+    .shape-shadow-m {
+        padding-top: 150rem;
+        clip-path: polygon( 0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 15vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
+    }
 }

@@ -1,4 +1,4 @@
-.design-box{
+.design-box {
     display: flex;
     min-height: 25rem;
     min-width: 40rem;
@@ -10,14 +10,14 @@
     flex-wrap: wrap;
 }
 
-.picture-frame{
+.picture-frame {
     display: flex;
     margin-right: 2rem;
     margin-bottom: 3rem;
     justify-content: center;
 }
 
-.portfolio-text-box{
+.portfolio-text-box {
     display: flex;
     align-items: center;
     text-align: center;
@@ -26,39 +26,67 @@
     max-width: 60%;
 }
 
-.portfolio-item-title{
+.portfolio-item-title {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
     box-shadow: inset 0 -.25rem $color-md;
     transition: .5s all;
 }
 
-.portfolio-item-title:hover{
+.portfolio-item-title:hover {
     transition: .25s all;
     color: $color-m;
 }
 
-@media (min-width: 480px){
-    .design-box{
+%portfolio-text-container {
+    display: inline-block;
+    font-size: $font-size-m;
+    text-align: left;
+    width: 100%;
+}
+
+.portfolio-text-container-right {
+    @extend %portfolio-text-container;
+    float: right;
+}
+
+.portfolio-text-container-left {
+    @extend %portfolio-text-container;
+    float: left;
+}
+
+@media (min-width: 480px) {
+    %portfolio-text-container {
+        min-width: 35rem;
+        width: 50%;
+    }
+
+    .portfolio-text-container-right {
+        display: block;
+        font-size: $font-size-m;
+    }
+    .portfolio-text-container-left {
+        display: block;
+        font-size: $font-size-m;
+    }
+    .design-box {
         margin-bottom: 1.5rem;
         margin-top: 1.5rem;
     }
-
-    .picture-frame{
+    .picture-frame {
         margin-bottom: 3rem;
     }
-
-    .portfolio-text-box{
+    .portfolio-text-box {
         max-width: 30%;
     }
 }
 
-@media (min-width: 700px){
-    .portfolio-text-box{
-        max-width: 30%;
-        text-align: left;
-    }   
-    .portfolio-overlay{
+@media (min-width: 700px) {
+    // .portfolio-text-box {
+    //     max-width: 30%;
+    //     text-align: left;
+    // }
+    .portfolio-overlay {
         display: none;
     }
 }

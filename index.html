@@ -17,8 +17,8 @@
 
 <body>
     <!-- Background clip-path shape that sits outside the normal positioning -->
-    <div class="shape"></div>
-    <div class="shape-shadow"></div>
+    <div class="shape-s"></div>
+    <div class="shape-shadow-s"></div>
 
     <!-- Image display overlay -->
     <div class="portfolio-overlay is-hidden"></div>
@@ -28,46 +28,60 @@
         <ul class="nav-list-container">
 
             <!-- title -->
-            <a href="">
-                <li class="nav-list-item nav-list-title font-m font-weight-sb">Collin Snyder</li>
-            </a>
+            <li class="nav-list-item nav-list-title font-m font-weight-sb">Collin Snyder</li>
 
             <!-- desktop links -->
-            <a href="">
-                <li class="nav-list-item nav-list-link font-s">Home</li>
+            <a href="index.html">
+                <li class="nav-list-item nav-list-link font-s">About Me</li>
             </a>
             <a href="">
                 <li class="nav-list-item nav-list-link font-s">Portfolio</li>
             </a>
-            <a href="">
-                <li class="nav-list-item nav-list-link font-s">About Me</li>
-            </a>
+
 
             <!-- mobile button -->
             <li class="nav-mobile-button nav-list-item">
                 <i class="nav-mobile-icon fas fa-bars" onclick="toggleMobileMenu()"></i>
                 <ul class="nav-mobile-menu is-hidden">
-                    <a href="">
-                        <li class="nav-list-item nav-list-link font-s">Home</li>
+                    <a href="index.html">
+                        <li class="nav-list-item nav-list-link font-s">About Me</li>
                     </a>
                     <a href="">
                         <li class="nav-list-item nav-list-link font-s">Portfolio</li>
-                    </a>
-                    <a href="">
-                        <li class="nav-list-item nav-list-link font-s">About Me</li>
                     </a>
                 </ul>
             </li>
         </ul>
 
-        <div class="portfolio-item-container col--3-of-4 col--push-1-of-8">
-            <div class="portfolio-portrait-frame">
-                <img src="resources/portrait.jpg" class="portfolio-portrait" />
+        <div class="front-page-title-container">
+            <div class="front-page-portrait-frame">
+                <img src="resources/portrait.jpg" class="front-page-portrait" />
             </div>
-            <div class="portfolio-title-text">
-                <h1 class="portfolio-artist-title">Collin Snyder</h1>
+            <div class="front-page-title-text">
+                <h1 class="front-page-artist-title">Collin Snyder</h1>
                 <h4>Graphic & Web Design </h4>
             </div>
+        </div>
+
+        <div class="portfolio-text-container-right">
+            <p>
+                Hey there! I'm happy to meet you!
+            </p>
+            <p>
+                I’m a 23-year-old Central Pennsylvania graphic designer, front-end developer, and overall oddball rolled in one person.
+            </p>
+            <p>
+                I graduated from Lock Haven University with a BS in computer science in 2017. during my studies, I picked up a keen interest
+                in graphic design, and tried to find ways to apply code interests to design interests. Eventually, I was
+                introduced to web design and front-end development, which has now become my primary focus.
+            </p>
+            <p>
+                During the summer of 2016, I spent my summer working an internship at Projects by Peggy, Inc. During this time, I was introduced
+                to WordPress and CMSes. By the end of the internship, I would be transferring several client websites from
+                older, unsupported platforms over to WordPress, essentially rebuilding them in the process. In a strange
+                turn of events, I also found myself being the company photographer for a short time.
+            </p>
+
         </div>
 
     </div>

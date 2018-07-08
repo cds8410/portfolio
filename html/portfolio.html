@@ -17,68 +17,41 @@
 
 <body>
     <!-- Background clip-path shape that sits outside the normal positioning -->
-    <div class="shape"></div>
+    <div class="shape-m"></div>
+    <div class="shape-shadow-m"></div>
 
     <!-- Image display overlay -->
-    <div class="portfolio-overlay">
-        <div class = "portfolio-image-overlay is-hidden">
-            <div class="portfolio-overlay-x">
-                <i class="fas fa-times"></i>
-            </div>
-            <img src="../resources/flowers/Book-Pages-Print-01.jpg" class="picture-frame-overlay image-normal" />
-        </div>
-
-        <!-- mobile box -->
-        <ul class="nav-mobile">
-                <a class="nav-mobile-list-item" href="index.html">
-                    <li class="nav-mobile-list-link">
-                        Me
-                    </li>
-                </a>
-                <a class="nav-mobile-list-item" href="html/portfolio.html">
-                    <li class="nav-mobile-list-link">
-                        Portfolio
-                    </li>
-                </a>
-                <a class="nav-mobile-list-item" href="html/resume.html">
-                    <li class="nav-mobile-list-link">
-                        Resume
-                    </li>
-                </a>
-            </ul>
-
-    </div>
-
+    <div class="portfolio-overlay is-hidden"></div>
 
     <div class="container">
 
         <!-- naviagtion -->
-        <ul class="nav-list-container row">
-            <a class="nav-list-item nav-list-title" link="index.html">
-                <li>
-                    Collin Snyder
-                </li>
+        <ul class="nav-list-container">
+
+            <!-- title -->
+            <li class="nav-list-item nav-list-title font-m font-weight-sb">Collin Snyder</li>
+
+            <!-- desktop links -->
+            <a href="../index.html">
+                <li class="nav-list-item nav-list-link font-s">About Me</li>
+            </a>
+            <a href="">
+                <li class="nav-list-item nav-list-link font-s">Portfolio</li>
             </a>
 
-            <li class="nav-mobile-button nav-list-item nav-list-link">
-                <i class=" fas fa-bars"></i>
+
+            <!-- mobile button -->
+            <li class="nav-mobile-button nav-list-item">
+                <i class="nav-mobile-icon fas fa-bars" onclick="toggleMobileMenu()"></i>
+                <ul class="nav-mobile-menu is-hidden">
+                    <a href="index.html">
+                        <li class="nav-list-item nav-list-link font-s">About Me</li>
+                    </a>
+                    <a href="">
+                        <li class="nav-list-item nav-list-link font-s">Portfolio</li>
+                    </a>
+                </ul>
             </li>
-
-            <a class="nav-list-item nav-list-link nav-desktop" href="../index.html">
-                <li>
-                    Me
-                </li>
-            </a>
-            <a class="nav-list-item nav-list-link nav-desktop" href="portfolio.html">
-                <li>
-                    Portfolio
-                </li>
-            </a>
-            <a class="nav-list-item nav-list-link nav-desktop" href="resume.html">
-                <li>
-                    Resume
-                </li>
-            </a>
         </ul>
 
 
@@ -180,5 +153,7 @@
     </div>
 
 </body>
+
+<script src="../js/mobile.js"></script>
 
 </html>
