@@ -7,3 +7,18 @@
     max-width: 96rem;
     position: relative;
 }
+
+.flex-left{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex-right{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+}

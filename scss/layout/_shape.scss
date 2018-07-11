@@ -17,6 +17,11 @@
     padding-top: 230rem;
 }
 
+.shape-l{
+    @extend %shape;
+    padding-top: 250rem;
+}
+
 %shape-shadow {
     background-color: rgba(0, 0, 0, 0.25);
     width: 100%;

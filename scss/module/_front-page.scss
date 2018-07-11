@@ -29,6 +29,11 @@
     font-size: 2rem;
 }
 
+.front-page-text-box{
+    width: 100%;
+    font-size: $font-size-m;
+}
+
 .front-page-portrait-frame {
     position: absolute;
     background-color: $color-md;
@@ -44,6 +49,12 @@
     clip-path: polygon(0 0, 90% 0, 100% 80%, 10% 80%);
 }
 
+.front-page-icon{
+    color: $color-d;
+    font-size: $font-size-m;
+    padding-right: 1rem;
+}
+
 @media (min-width: 480px){
     .portfolio-text-container{
         font-size: $font-size-m;
@@ -51,6 +62,10 @@
         text-align: left;
         width: 50%;
         float: right;
+    }
+    .front-page-text-box{
+        width: 50%;
+        font-size: $font-size-m;
     }
 }
 
@@ -75,3 +90,4 @@
         position: absolute;
     }
 }
+

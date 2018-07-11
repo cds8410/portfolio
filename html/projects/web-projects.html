@@ -17,44 +17,43 @@
 
 <body>
     <!-- Background clip-path shape that sits outside the normal positioning -->
-    <div class="shape"></div>
+    <div class="shape-m"></div>
 
 
     <div class="container">
 
-        <!-- naviagtion -->
-        <ul class="nav-list-container row">
-            <a class="nav-list-item nav-list-title" link="index.html">
-                <li>
-                    Collin Snyder
-                </li>
+         <!-- naviagtion -->
+         <ul class="nav-list-container">
+
+            <!-- title -->
+            <li class="nav-list-item nav-list-title">Collin Snyder</li>
+
+            <!-- desktop links -->
+            <a href="../../index.html">
+                <li class="nav-list-item nav-list-link">About Me</li>
+            </a>
+            <a href="../portfolio.html">
+                <li class="nav-list-item nav-list-link">Portfolio</li>
             </a>
 
-            <li class="nav-mobile-button nav-list-item nav-list-link">
-                <i class=" fas fa-bars"></i>
+            <!-- mobile button -->
+            <li class="nav-mobile-button nav-list-item">
+                <i class="nav-mobile-icon fas fa-bars" onclick="toggleMobileMenu()"></i>
+                <ul class="nav-mobile-menu is-hidden">
+                    <a href="../../index.html">
+                        <li class="nav-list-item nav-list-link">About Me</li>
+                    </a>
+                    <a href="../portfolio.html">
+                        <li class="nav-list-item nav-list-link">Portfolio</li>
+                    </a>
+                </ul>
             </li>
-
-            <a class="nav-list-item nav-list-link nav-desktop" href="../../index.html">
-                <li>
-                    Me
-                </li>
-            </a>
-            <a class="nav-list-item nav-list-link nav-desktop" href="../portfolio.html">
-                <li>
-                    Portfolio
-                </li>
-            </a>
-            <a class="nav-list-item nav-list-link nav-desktop" href="../resume.html">
-                <li>
-                    Resume
-                </li>
-            </a>
         </ul>
 
 
         <div class="row">
             <div class="col col--3-of-4 design-box">
-                <div class="picture-frame">
+                <div class="portfolio-picture-frame">
                     <img src="../resources/logos/body-central-thumbnail.png" class="image-scale-down" \>
                 </div>
                 <div class="portfolio-text-box">
@@ -68,7 +67,7 @@
 
         <div class="row">
             <div class="col col--3-of-4 col--push-1-of-8 design-box">
-                <div class="picture-frame">
+                <div class="portfolio-picture-frame">
                     <img src="../resources/flowers/Book-Pages-Print-thumbnail.jpg" class="image-scale-down" \>
                 </div>
                 <div class="portfolio-text-box">
@@ -84,7 +83,7 @@
 
         <div class="row">
             <div class="col col--3-of-4 col--push-1-of-4 design-box">
-                <div class="picture-frame">
+                <div class="portfolio-picture-frame">
                     <img src="../resources/typography/noxious-print-thumbnail.png" class="image-scale-down" \>
                 </div>
                 <div class="portfolio-text-box">
@@ -99,7 +98,7 @@
 
         <div class="row">
             <div class="col col--3-of-4 col--push-1-of-8 design-box">
-                <div class="picture-frame">
+                <div class="portfolio-picture-frame">
                     <img src="../resources/posters/globalWarming-thumbnail.jpg" class="image-scale-down" \>
                 </div>
                 <div class="portfolio-text-box">
@@ -114,7 +113,7 @@
 
         <div class="row">
             <div class="col col--3-of-4 design-box">
-                <div class="picture-frame">
+                <div class="portfolio-picture-frame">
                     <img src="../resources/logos/body-central-thumbnail.png" class="image-scale-down" \>
                 </div>
                 <div class="portfolio-text-box">
@@ -130,5 +129,7 @@
     </div>
 
 </body>
+
+<script src="../../js/mobile.js"></script>
 
 </html>

@@ -43,7 +43,14 @@
 
 //large
 @media (min-width: 480px){
-
+    .image-scale-thumbnail{
+        height: 20rem;
+    }
+    
+    .image-scale-thumbnail:hover{
+        height: 21rem;
+        margin-top: -1rem;
+    }
 }
 
 @media (min-width: 700px){
