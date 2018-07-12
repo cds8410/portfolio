@@ -228,8 +228,8 @@ h4 {
   background-color: #ffffcb;
   width: 100%;
   position: absolute;
-  -webkit-clip-path: polygon(0 0, 0 40rem, 5vw 93rem, 0 140rem, 0 180rem, 5vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
-          clip-path: polygon(0 0, 0 40rem, 5vw 93rem, 0 140rem, 0 180rem, 5vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
+  -webkit-clip-path: polygon(-5vw 0, 5vw 50%, -5vw 100%, 95vw 100%, 105vw 50%, 95vw 0);
+          clip-path: polygon(-5vw 0, 5vw 50%, -5vw 100%, 95vw 100%, 105vw 50%, 95vw 0);
   z-index: 0;
 }
 
@@ -255,36 +255,24 @@ h4 {
 
 .shape-shadow-s {
   padding-top: 125rem;
-  -webkit-clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 15vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
-          clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 15vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
 }
 
 .shape-shadow-m {
   padding-top: 225rem;
-  -webkit-clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 15vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
-          clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 15vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
 }
 
 @media (min-width: 480px) {
   .shape-s {
     padding-top: 120rem;
-    -webkit-clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 100%, 90vw 100%, 85vw 170rem, 100vw 93rem, 100vw 40rem, 85vw 0);
-            clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 100%, 90vw 100%, 85vw 170rem, 100vw 93rem, 100vw 40rem, 85vw 0);
   }
   .shape-shadow-s {
     padding-top: 115rem;
-    -webkit-clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 15vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
-            clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 15vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
   }
   .shape-m {
     padding-top: 155rem;
-    -webkit-clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 100%, 90vw 100%, 85vw 170rem, 100vw 93rem, 100vw 40rem, 85vw 0);
-            clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 100%, 90vw 100%, 85vw 170rem, 100vw 93rem, 100vw 40rem, 85vw 0);
   }
   .shape-shadow-m {
     padding-top: 150rem;
-    -webkit-clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 15vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
-            clip-path: polygon(0 0, 0 40rem, 15vw 93rem, 0 140rem, 0 180rem, 15vw 250rem, 100vw 250rem, 100vw 230rem, 85vw 180rem, 100vw 93rem, 100vw 40rem, 85vw 0);
   }
 }
 
